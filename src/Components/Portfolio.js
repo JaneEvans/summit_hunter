@@ -5,11 +5,11 @@ class Portfolio extends Component {
 
     if(this.props.data){
       var projects = this.props.data.projects.map(function(projects){
-        var projectImage = 'images/portfolio/'+projects.image;
+
         return <div key={projects.title} className="columns portfolio-item">
            <div className="item-wrap">
-            <a href={projects.url} title={projects.title}>
-               <img alt={projects.title} src={projectImage} />
+            <a href={projects.url} title={projects.title} rel="noopener noreferrer"  target="_blank">
+               <img alt={projects.title} src={projects.image} />
                <div className="overlay">
                   <div className="portfolio-item-meta">
                  <h5>{projects.title}</h5>
@@ -26,18 +26,19 @@ class Portfolio extends Component {
     return (
       <section id="portfolio">
 
-      <div className="row">
+        <div className="row">
+          <div className="twelve columns collapsed">
 
-         <div className="twelve columns collapsed">
+              <h1>Check Out Our Featured Outdoor Articles.</h1>
 
-            <h1>Check Out Some of My Works.</h1>
-
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-                {projects}
+              <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+                  {projects}
+              </div>
+              <hr></hr>
+              <h2>To be continued...</h2>
             </div>
-          </div>
-      </div>
-   </section>
+        </div>
+      </section>
     );
   }
 }

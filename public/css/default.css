@@ -176,6 +176,7 @@ p img { margin: 0; }
 p.lead {
    font: 19px/36px 'opensans-light', sans-serif;
    margin-bottom: 18px;
+   margin-top:10px;
 }
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
@@ -687,7 +688,7 @@ input[type="checkbox"] { display: inline; }
 /* block grids
 --------------------------------------------------------------------- */
 .bgrid-sixths [class*="column"]   { width: 16.66667%; }
-.bgrid-quarters [class*="column"] { width: 25%; }
+.bgrid-quarters [class*="column"] { width: 33%; }
 .bgrid-thirds [class*="column"]   { width: 33.33333%; }
 .bgrid-halves [class*="column"]   { width: 50%; }
 
@@ -706,7 +707,7 @@ properly.
 
    /* block grids on small screens */
    .s-bgrid-sixths [class*="column"]   { width: 16.66667%; }
-   .s-bgrid-quarters [class*="column"] { width: 25%; }
+   .s-bgrid-quarters [class*="column"] { width: 33%; }
    .s-bgrid-thirds [class*="column"]   { width: 33.33333%; }
    .s-bgrid-halves [class*="column"]   { width: 50%; }
 

@@ -15,7 +15,7 @@ class App extends Component {
     super(props);
     this.state = {
       foo: 'bar',
-      resumeData: {}
+      summitHunterData: {}
     };
 
     ReactGA.initialize('UA-110570651-1');
@@ -23,13 +23,13 @@ class App extends Component {
 
   }
 
-  getResumeData(){
-    fetch("/resumeData.json")
+  getSummitHunterData(){
+    fetch("/summitHunterData.json")
       .then(res => res.json())
       .then(
         (result) => {
           this.setState({
-            resumeData: result
+            summitHunterData: result
           });
         },
         (error) => {
@@ -43,19 +43,19 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.getResumeData();
+    this.getSummitHunterData();
   }
 
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
+        <Header data={this.state.summitHunterData.main}/>
+        <About data={this.state.summitHunterData.main}/>
         {/* <Resume data={this.state.resumeData.resume}/> */}
-        <Portfolio data={this.state.resumeData.portfolio}/>
+        <Portfolio data={this.state.summitHunterData.portfolio}/>
         {/* <Testimonials data={this.state.resumeData.testimonials}/> */}
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
+        <Contact data={this.state.summitHunterData.main}/>
+        <Footer data={this.state.summitHunterData.main}/>
       </div>
     );
   }

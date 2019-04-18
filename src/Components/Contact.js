@@ -5,11 +5,8 @@ class Contact extends Component {
 
     if(this.props.data){
       var name = this.props.data.name;
-      var street = this.props.data.address.street;
       var city = this.props.data.address.city;
       var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
       var email = this.props.data.email;
       var message = this.props.data.contactmessage;
     }
@@ -18,27 +15,19 @@ class Contact extends Component {
       <section id="contact">
 
          <div className="row section-head">
-
             <div className="two columns header-col">
-
                <h1><span>Get In Touch.</span></h1>
-
             </div>
-
             <div className="ten columns">
-
-                  <p className="lead">{message}</p>
-
+               <p className="lead">{message}</p>
             </div>
-
          </div>
 
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form action="mailto:janeevans.gejj@gmail.com" method="post" id="contactForm" name="contactForm">
 					<fieldset>
-
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
 						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
@@ -56,7 +45,7 @@ class Contact extends Component {
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="10" id="contactMessage" name="contactMessage"></textarea>
                   </div>
 
                   <div>
@@ -78,12 +67,14 @@ class Contact extends Component {
             <aside className="four columns footer-widgets">
                <div className="widget widget_contact">
 
-					   <h4>Address and Phone</h4>
+					   <h4>Address</h4>
 					   <p className="address">
 						   {name}<br />
-						   {street} <br />
-						   {city}, {state} {zip}<br />
-						   <span>{phone}</span>
+						   {city}, {state}<br/>
+					   </p>
+                  <h4>Email</h4>
+					   <p className="address">
+						   <span>{email}</span>
 					   </p>
 				   </div>
 
