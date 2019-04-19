@@ -211,7 +211,7 @@ ul#nav li.current a { color: #F06000; }
    background: rgba(143, 143, 143, 0.411);
    margin:0;
    width: 100%;
-   max-width: 900px;
+   max-width: 930px;
    padding:40px 0 0 3%;
 }
 #about p {
