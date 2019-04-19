@@ -9,6 +9,7 @@ class Contact extends Component {
       var state = this.props.data.address.state;
       var email = this.props.data.email;
       var message = this.props.data.contactmessage;
+      var photoCredit = this.props.data.pc;
     }
 
     return (
@@ -75,6 +76,10 @@ class Contact extends Component {
                   <h4>Email</h4>
 					   <p className="address">
 						   <span>{email}</span>
+					   </p>
+                  <h4>Photo Credits</h4>
+					   <p className="address">
+						   <span>{photoCredit}</span>
 					   </p>
                   <hr/>
                   <p id ="poetry" >
