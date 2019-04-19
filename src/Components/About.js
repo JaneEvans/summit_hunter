@@ -6,12 +6,8 @@ class About extends Component {
     if(this.props.data){
       var profilepic= "images/"+this.props.data.image;
       var occupation = this.props.data.occupation;
-      var description = this.props.data.description;
       var bio = this.props.data.bio;
       var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var email = this.props.data.email;
-      // var resumeDownload = this.props.data.resumedownload;
     }
 
     return (
@@ -22,17 +18,14 @@ class About extends Component {
          </div>
          <div className="nine columns main-col">
             <h2>About Us</h2>
-            <p>We are a {city} based <span>{occupation}</span> to promote outdoor spirits. {description}</p>
-            <p>{bio}</p>
-            <div className="row">
-               <div className="columns contact-details">
-                  <h2>Contact Us</h2>
-                  <p className="address">
-                     <span>{city}, {state}</span><br />
-                     <span>{email}</span>
-                  </p>
-               </div>
-            </div>
+            <p>
+               <span>{bio}</span><br/>
+               We are a {city} based {occupation} built around passion for the outdoors.<br/>
+               Our goal is to share adventures and skills, encourage people who has passion and love for our fantastic nature and create volunteers who want to give back. <br/>
+               On behalf of John Muir's dream, "as long as I live, I'll hear waterfalls and birds sing. I'll interpret the rocks, learn the language of flood, storm, and avalanche. I'll acquaint myself with the glaciers and wild gardens, and get as near the heart of the world as I can." <br/>
+               We hope everyone in our community will have great joy and spread their love and passion to encourage others.               
+               
+            </p>
          </div>
       </div>
 

@@ -26,7 +26,7 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="mailto:janeevans.gejj@gmail.com" method="post" id="contactForm" name="contactForm">
+               <form action="" method="post" id="contactForm" name="contactForm">
 					<fieldset>
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
@@ -76,6 +76,18 @@ class Contact extends Component {
 					   <p className="address">
 						   <span>{email}</span>
 					   </p>
+                  <hr/>
+                  <p id ="poetry" >
+                  希望<br />
+                  不爱攀岩的你爱上攀岩<br/>
+                  不爱爬山的你爱上爬山<br/>
+                  不爱滑雪的你爱上滑雪<br/>
+                  不爱自然的你爱上自然<br/>
+                  当你老了<br/>
+                  回首这段时光<br/>
+                  你能回忆起<br/>
+                  那些最美最美的瞬间
+                  </p>
 				   </div>
 
                {/* <div className="widget widget_tweets">
