@@ -8,6 +8,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 // import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
+// import PostData from './Data/summitHunterData.json';
 
 class App extends Component {
 
@@ -24,7 +25,8 @@ class App extends Component {
   }
 
   getSummitHunterData(){
-    fetch("/summitHunterData.json")
+    fetch("https://janeevans.github.io/Files/json/summitHunterData.json")
+    // fetch("/summitHunterData.json")
       .then(res => res.json())
       .then(
         (result) => {
