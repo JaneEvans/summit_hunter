@@ -118,6 +118,8 @@ class Contact extends Component {
 		         </div> */}
             </aside>
       </div>
+      <div id='WeChat-twoCode'>
+      </div>
    </section>
     );
   }

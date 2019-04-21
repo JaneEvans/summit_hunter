@@ -580,9 +580,10 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919 url(../images/profilepic_small.png) no-repeat bottom right;
+   /* background: #191919 url(../images/profilepic_small.png) no-repeat bottom right;
    background-size: auto !important;
-	-webkit-background-size: auto !important;
+   -webkit-background-size: auto !important; */
+   background:#191919;
    padding-top: 78px;
    padding-bottom: 102px;
    color: #868585;
@@ -676,7 +677,13 @@ call-to-action .button {
 #poetry{
    align-content: center;
    font-family: 'Noto Serif TC', serif;
-   color: rgb(218, 112, 42);
+   color: rgb(199, 197, 197);
+}
+#WeChat-twoCode{
+   content: url("../images/WeChat-Code.jpg");
+   max-height: 150px;
+   margin: 0 auto;
+
 }
 
 #message-warning, #message-success {
