@@ -4,11 +4,8 @@ import './css/App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import About from './Components/About';
-// import Resume from './Components/Resume';
 import Contact from './Components/Contact';
-// import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
-// import PostData from './Data/summitHunterData.json';
 
 class App extends Component {
 
@@ -53,9 +50,7 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.summitHunterData.main}/>
         <About data={this.state.summitHunterData.main}/>
-        {/* <Resume data={this.state.resumeData.resume}/> */}
         <Portfolio data={this.state.summitHunterData.portfolio}/>
-        {/* <Testimonials data={this.state.resumeData.testimonials}/> */}
         <Contact data={this.state.summitHunterData.main}/>
         <Footer data={this.state.summitHunterData.main}/>
       </div>
