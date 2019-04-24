@@ -165,7 +165,7 @@
       // console.log(data)
       // $.ajax({
 
-	   //    type: "GET",
+	   //    type: "POST",
 	   //    url: "./php/sendEmail.php",
 	   //    data: data,
 	   //    success: function(msg) {
